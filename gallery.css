@@ -1,0 +1,129 @@
+body{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 equal sections */
+  align-items: center;
+ height: 3rem;
+  border-bottom: 2px solid #116466;
+}
+.company-logo{
+  display: flex;
+  justify-content: center;
+
+}
+.company-logo p {
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  font-weight: bold;
+}
+.website-navigation{
+  border-left: 2px solid #116466;
+  border-right: 2px solid #116466;
+  
+}
+.website-navigation ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.website-navigation li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #333;
+}
+.website-navigation li a:hover{
+  color: #116466;
+}
+.nav-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-btn button {
+  padding: 0.5rem 1rem;
+  background-color: #010101;
+  color: #fff;
+  border-radius: .1rem;
+  cursor: pointer;
+}
+
+.nav-btn button:hover {
+  background-color: #116466;
+}
+.gallery-section{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.gallery-section h1{
+  font-size: 4rem;
+  letter-spacing: .2rem;
+}
+.gallery-section p{
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  color: #116566;
+}
+.gallery{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+img{
+  width: 100%;
+  display: block;
+  border: #116466 solid .1rem;
+}
+@media (max-width: 700px){
+  .gallery-section h1{
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    margin-bottom: .5rem;
+  }
+  .gallery-section p{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: #116566;
+    text-align: center;
+  }
+  .gallery{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 460px){
+  .gallery-section h1{
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    text-align: center;
+  }
+  .gallery-section p{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    color: #116566;
+    text-align: center;
+  }
+  .gallery{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 2rem;
+  }
+}
